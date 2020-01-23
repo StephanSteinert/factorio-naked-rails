@@ -202,8 +202,9 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-stoneify",
+		stack_size = 1,
+		flags = {"not-stackable"},
 		subgroup = "transport",
-    	stack_size = 1,
 		order = "a[train-system]-y[naked-rails-stoneify]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 0.5, g = 0.5, b = 0.5, a = 0.2 },
@@ -223,12 +224,14 @@ data:extend({
 				shift = { 6, -6 }
 			}
 		},
-		icon_size = 32
+		icon_size = 32,
+		show_in_library = true,
+		stackable = false
 	},
 	{
 		type = "recipe",
 		name = "naked-rails-stoneify",
-		enabled = true,
+		enabled = false,
 		energy_required = 0.1,
 		ingredients = {},
 		result = "naked-rails-stoneify"
@@ -236,6 +239,7 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-sleepify",
+		flags = {"not-stackable"},
 		subgroup = "transport",
     	stack_size = 1,
 		order = "a[train-system]-x[naked-rails-sleepify]",
@@ -252,12 +256,14 @@ data:extend({
 				scale = 0.75
 			}
 		},
-		icon_size = 32
+		icon_size = 32,
+		show_in_library = true,
+		stackable = false
 	},
 	{
 		type = "recipe",
 		name = "naked-rails-sleepify",
-		enabled = true,
+		enabled = false,
 		energy_required = 0.1,
 		ingredients = {},
 		result = "naked-rails-sleepify"
@@ -266,7 +272,8 @@ data:extend({
 		type = "selection-tool",
 		name = "naked-rails-nakedify",
 		subgroup = "transport",
-    	stack_size = 1,
+		flags = {"not-stackable"},
+		stack_size = 1,
 		order = "a[train-system]-w[naked-rails-nakedify]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 0.5, g = 0.5, b = 0.5, a = 0.2 },
@@ -282,12 +289,14 @@ data:extend({
 				tint = { r = 1, g = 1, b = 1, a = 0.5 }
 			}
 		},
-		icon_size = 32
+		icon_size = 32,
+		show_in_library = true,
+		stackable = false
 	},
 	{
 		type = "recipe",
 		name = "naked-rails-nakedify",
-		enabled = true,
+		enabled = false,
 		energy_required = 0.1,
 		ingredients = {},
 		result = "naked-rails-nakedify"
@@ -296,6 +305,7 @@ data:extend({
 		type = "selection-tool",
 		name = "naked-rails-remnantify",
 		subgroup = "transport",
+		flags = {"not-stackable"},
     	stack_size = 1,
 		order = "a[train-system]-z[naked-rails-remnantify]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
@@ -311,12 +321,14 @@ data:extend({
 				scale = 0.7
 			}
 		},
-		icon_size = 32
+		icon_size = 32,
+		show_in_library = true,
+		stackable = false
 	},
 	{
 		type = "recipe",
 		name = "naked-rails-remnantify",
-		enabled = true,
+		enabled = false,
 		energy_required = 0.1,
 		ingredients = {},
 		result = "naked-rails-remnantify"
